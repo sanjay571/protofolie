@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+<a href="#home" class="logo">
+            Sanjay <span>Medisetti</span>
+</a>
+<i class='bx bx-menu' id="menu-icon"></i>
+<nav class="navbar">
+<a href="#Home"class="active">Home</a>
+<a href="#About">About</a>
+<a href="#Education">Education</a>
+<a href="#Services">Services</a>
+<a href="#Contact ">Contact </a>
+        </nav>
+    </header>
+    <section class="Home">
+        
+        <div class="home-content" style="margin-top:40% ;">
+            <h3>Hi,</h3>
+            <h1>I'm <span>Sanjay</span></h1>
+            <h3 class="text-animation">
+                I'm <span>Developer</span>
+            </h3>
+            <div class="social-icons" style="display: flex;">
+                <a href="https://www.facebook.com/"  style="background: #4267b2;" class="links">
+                   <i class='bx bxl-facebook' ></i>
+               </a>
+               <a href="https://x.com/home" style="background: #2d158a;" class="links">
+                   <i class='bx bxl-twitter' ></i>
+               </a>
+               <a href="https://www.instagram.com/" style="background: #e6146f;" class="links">
+                   <i class='bx bxl-instagram' ></i>
+               </a>
+               <a href="https://www.youtube.com/" style="background: #e61414;" class="links">
+                   <i class='bx bxl-youtube' ></i>
+                   
+               </a></div>
+            <div class="button">
+            <a href="#">Download Cv</a>
+            </div>
+            
+        
+            
+        
+    </section>
+    <div class="box">
+    <div class="img1 ">
+        <img src="../Sanjay.png" alt="Sanjay" >
+        </div>
+    </div>
+
+    <section class="about" id="About">
+        <div class="about-img">
+            <img src="../Sanjay.png" alt="sanjay">
+        </div> <div class="about-content">
+            <fieldset>
+                <h2 class="heading" style="color: #e61414;">ABOUT <span>Me</span></h2>
+                <h3 style="color: aqua;">Frontend Developer</h3>
+        <p>Hello, I’m Sanjay, a passionate Software Developer with a BTech degree from Dhanekula Institute of Engineering and Technology. My education provided me with a solid foundation in software development, problem-solving, and critical thinking.</p>
+            
+            <a href="#" class="btn" id="toggleButton">Read more</a>
+            <div class="extra-content" id="extraContent"><p>I recently developed a **Flipkart Clone** as a significant project during my studies. This project allowed me to gain hands-on experience with web development technologies and practice creating a user-friendly and functional application.
+                As a fresh graduate, I am enthusiastic about applying my skills in [mention relevant technologies, e.g., JavaScript, React, HTML/CSS] and contributing to innovative projects. I am eager to start my career and am particularly interested in opportunities where I can grow and make a meaningful impact.
+                My goal is to **settle into a position at a leading MNC** where I can work with a talented team, tackle complex challenges, and continue to develop my skills. I am excited about the prospects of collaborating on diverse projects and advancing my career in a dynamic environment.     
+        </div>
+
+    </section>
+    <section class="education" id="Education">
+        <h2>Education</h2>
+        <div class="card-container">
+            <div class="card">
+            <div class="card-content">
+                <img src="../dhan.png" alt="Dhanekula" class="dhan">
+                    <h4>Dhanekula Insitute of Engineering and Technology</h4>
+                    <p>B.Tech</p>
+                    <p>Ece</p>
+                    <p>Grade:8.3</p>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <img src="../narayana.png" alt="Narayana" class="usho">
+                        <h4>Narayana Junior College</h4>
+                        <p>Intermidate</p>
+                        <p>Mpc</p>
+                        <p>Grade:8.8</p>
+                    </div>
+                </div><div class="card">
+                    <div class="card-content">
+                        <img src="../ushodaya.jpg" alt="Ushodaya" class="usho">
+                            <h4>Ushodaya English Medium High School</h4>
+                            <p>10th class</p>
+                            <p>Grade:9.2</p>
+
+
+                        </div>
+                    </div>
+        </div>
+    </section>
+
+    <section class="Services" id="Services">
+        <h2 class="h2">Services</h2>
+        <div id="card-container">
+            <div class="card">
+            <div class="card-text">
+                <img src="../frontend.jpg" alt="Frontend " class="frontend">
+                    <h3>Frontend development</h3>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-text">
+                    <img src="../backend.avif" alt="Backend " class="Backend">
+                        <h3>Backend development</h3>
+                    </div></div>
+                    <div class="card">
+                        <div class="card-text">
+                            <img src="../web.jpg" alt="web " class="web">
+                                <h3>Web development</h3>
+                            </div></div>
+        </div>
+    </section>
+    <section class="Contact" id="Contact">
+        <h2 class="h2">Get in Touch</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea><br><br>
+          <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            var extraContent = document.getElementById('extraContent');
+            if (extraContent.style.display === 'none') {
+                extraContent.style.display = 'block'; // Show the extra content
+                this.textContent = 'Read less'; // Change button text
+            } else {
+                extraContent.style.display = 'none'; // Hide the extra content
+                this.textContent = 'Read more'; // Change button text back
+            }
+        });
+    </script>
+</body>
+</html>
